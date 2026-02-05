@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
         <div className="flex items-center gap-6">
           
           <a
-            href="mailto:yourmail@gmail.com"
+            href="mailto:swayamsb50@gmail.com"
             className="flex items-center gap-2 text-brand-muted hover:text-brand-accent transition"
           >
             <Mail size={16} />
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/swayam5342"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-brand-muted hover:text-brand-accent transition"
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/swayam5342"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-brand-muted hover:text-brand-accent transition"

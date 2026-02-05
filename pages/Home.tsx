@@ -3,10 +3,17 @@ import React from 'react';
 import { Shield, Cpu, ArrowRight, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import projectsData from '../data/projects';
+import homeData from '../data/home.json';
 
 export const Home: React.FC = () => {
   const featuredProjects = projectsData.filter(p => p.featured).slice(0, 2);
-
+  const iconMap: any = {
+  Shield: Shield,
+  Cpu: Cpu,
+  Github: Github
+};
+  const main_text = homeData.main_text;
+  const mid_part = homeData.mid_part
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 space-y-24">
       {/* Hero */}
@@ -26,8 +33,7 @@ export const Home: React.FC = () => {
           </h1>
           
           <p className="max-w-lg text-brand-muted text-base leading-relaxed border-l border-brand-border pl-6 font-mono">
-            Engineering robust systems with zero-trust protocols and hardened architectures. 
-            Focus: High-concurrency Go and Cybersecurity Research.
+            {main_text}
           </p>
 
           <div className="flex flex-wrap gap-4 pt-6">
@@ -44,14 +50,16 @@ export const Home: React.FC = () => {
 
       {/* Quick Stats */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-1">
-        {[
-          { label: "SECURITY_AUDIT", value: "PASSED", icon: Shield },
-          { label: "CORE_SYSTEMS", value: "MICRO_SERVICES", icon: Cpu },
-          { label: "DATA_STREAMS", value: "100%_UPTIME", icon: Github }
-        ].map((stat, i) => (
+        {mid_part.map((stat, i) => (
           <div key={i} className="p-8 border border-brand-border bg-brand-surface hover:bg-brand-accent hover:text-brand-bg transition-all duration-300 group">
             <div className="flex items-center justify-between mb-8">
-              <stat.icon size={18} className="text-brand-accent group-hover:text-brand-bg" />
+              {(() => {
+  const Icon = iconMap[stat.icon];
+  return Icon ? (
+    <Icon size={18} className="text-brand-accent group-hover:text-brand-bg" />
+  ) : null;
+})()}
+
             </div>
             <p className="text-[10px] font-mono text-brand-muted group-hover:text-brand-bg/70 mb-1">{stat.label}</p>
             <p className="text-lg font-bold font-mono">{stat.value}</p>

@@ -1,62 +1,43 @@
-
 [
   {
     "id": 1,
-    "slug": "smart-library",
-    "title": "Secure Smart Library System",
-    "description": "Enterprise-grade library management backend with robust security protocols and analytics.",
-    "tags": ["Backend", "Security", "FastAPI"],
-    "github": "https://github.com",
-    "demo": "https://demo.com",
+    "slug": "promptto-web",
+    "title": "Prompt to Web",
+    "description": "AI system that converts natural language prompts into fully functional web applications and deploys them automatically.",
+    "tags": ["Backend", "AI", "Automation"],
+    "github": "https://github.com/swayam5342/TDS1",
     "featured": true,
     "resume_points": [
-      "Implemented JWT-based stateless authentication with automatic token rotation.",
-      "Architected a relational database schema optimized for complex library transactions.",
-      "Designed a secure file upload system with mime-type validation and malware scanning hooks."
+      "Built an AI-driven system that converts natural-language prompts into fully functional web applications.",
+      "Automated GitHub repository creation, commits, and deployment to GitHub Pages.",
+      "Implemented retry and resilience workflows for AI and GitHub API failures."
     ],
     "details": {
-      "architecture": "Built with FastAPI for asynchronous performance, utilizing PostgreSQL for persistence and Redis for caching search results.",
-      "challenges": "Managing race conditions during peak borrowing hours while maintaining data integrity across distributed nodes.",
-      "security": "Implemented Argon2id for password hashing, rate limiting per user, and comprehensive OWASP Top 10 mitigation.",
-      "improvements": "Planning to transition to a microservices architecture using gRPC for inter-service communication."
+      "architecture": "FastAPI backend integrated with Google GenAI and GitHub APIs for automated repo creation and deployment pipelines.",
+      "challenges": "Handling unreliable LLM outputs and GitHub API failures with retry and validation workflows.",
+      "security": "Used API key isolation, secure environment variables, and controlled automation pipelines.",
+      "improvements": "Future improvements include multi-template generation and CI/CD pipeline customization."
     }
   },
   {
     "id": 2,
-    "slug": "network-sniff",
-    "title": "PySniff: Advanced Network Tool",
-    "description": "A Python-based packet analysis tool focusing on intrusion detection and forensic logging.",
-    "tags": ["Cybersecurity", "Networking", "Python"],
-    "github": "https://github.com",
+    "slug": "kargo-backend",
+    "title": "Kargo Backend",
+    "description": "Backend platform enabling containerized app deployments with AI-powered setup and Kubernetes-native scaling.",
+    "tags": ["Backend", "Cloud", "Kubernetes","DevOps"],
+    "github": "https://github.com/GDGVIT/kargo-backend",
     "featured": true,
     "resume_points": [
-      "Developed custom BPF filters for targeted packet capture.",
-      "Built a real-time alerting system for common network attacks like ARP spoofing."
+      "Implemented multi-provider authentication (Google OAuth, GitHub OAuth, local login).",
+      "Integrated GitHub APIs for repository linking and deployment automation.",
+      "Built modules for multi-tenant resource allocation and deployment orchestration.",
+      "Developed monitoring endpoints and Docker-based build workflows."
     ],
     "details": {
-      "architecture": "Utilizes Scapy for low-level packet manipulation and Click for the CLI interface.",
-      "challenges": "Optimizing packet processing pipelines to handle 1Gbps traffic without significant drops.",
-      "security": "Ensures forensic logs are cryptographically signed to prevent tampering.",
-      "improvements": "Adding support for TLS decryption using provided private keys for localized debugging."
-    }
-  },
-  {
-    "id": 3,
-    "slug": "go-auth-vault",
-    "title": "AuthVault Microservice",
-    "description": "High-performance authentication service written in Go, focusing on OAuth2 and OpenID Connect.",
-    "tags": ["Backend", "Go", "Fullstack"],
-    "github": "https://github.com",
-    "featured": false,
-    "resume_points": [
-      "Achieved 95% test coverage using unit and integration testing.",
-      "Integrated with HashiCorp Vault for secure credential management."
-    ],
-    "details": {
-      "architecture": "Stateless Go service using Clean Architecture principles.",
-      "challenges": "Implementing strict OAuth2 flows according to latest RFCs.",
-      "security": "Enforced HSTS, CSP, and strict CORS policies.",
-      "improvements": "Adding WebAuthn support for hardware-based MFA."
+      "architecture": "Containerized microservice-style backend using Docker, Kubernetes, MongoDB, and OAuth2 authentication.",
+      "challenges": "Designing multi-tenant deployment orchestration and secure session management.",
+      "security": "Implemented OAuth2 authentication flows and secure session handling.",
+      "improvements": "Future work includes autoscaling, usage analytics, and advanced monitoring dashboards."
     }
   }
 ]

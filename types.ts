@@ -23,6 +23,7 @@ export interface Certificate {
   issuer: string;
   year: string;
   file: string;
+  verify?: string;
 }
 
 export interface ResumeData {

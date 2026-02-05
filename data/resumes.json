@@ -1,6 +1,6 @@
 
 {
-  "default": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-  "security": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-  "backend": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+  "default": "./pdf/resume.pdf",
+  "security": "./pdf/resume.pdf",
+  "backend": "./pdf/resume.pdf"
 }

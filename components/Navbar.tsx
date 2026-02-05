@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="bg-brand-accent p-1 text-brand-bg">
             </div>
-            <span className="font-mono font-bold tracking-tight text-xs flex flex-col leading-none">
+            <span className="font-mono font-bold tracking-tight text-sm flex flex-col leading-none">
               <span>SWAYAM</span>
             </span>
           </Link>
@@ -36,7 +36,7 @@ export const Navbar: React.FC = () => {
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) => 
-                  `font-mono text-[10px] font-medium transition-all py-1 ${isActive ? activeClass : inactiveClass}`
+                  `font-mono text-sm font-medium transition-all py-1 ${isActive ? activeClass : inactiveClass}`
                 }
               >
                 {link.name}
@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
               key={link.name}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="block font-mono text-xs text-brand-muted hover:text-brand-accent"
+              className="block font-mono text-sm text-brand-muted hover:text-brand-accent"
             >
               {`> ${link.name}`}
             </NavLink>

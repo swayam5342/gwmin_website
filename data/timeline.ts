@@ -1,31 +1,6 @@
 
 import { TimelineItem } from '../types';
-
-const timelineData: TimelineItem[] = [
-  {
-    "id": 1,
-    "type": "education",
-    "title": "B.S. in Computer Science",
-    "subtitle": "University of Technology",
-    "date": "2021 - 2025",
-    "description": "Focusing on Secure Systems and Distributed Backend Architecture. GPA: 3.9/4.0"
-  },
-  {
-    "id": 2,
-    "type": "certification",
-    "title": "Google Cybersecurity Certificate",
-    "subtitle": "Coursera",
-    "date": "June 2024",
-    "description": "Intensive program covering threat detection, Linux security, and network protection."
-  },
-  {
-    "id": 3,
-    "type": "project",
-    "title": "Lead Backend Developer",
-    "subtitle": "Smart Library System",
-    "date": "2023",
-    "description": "Led a team of 3 to build a secure library management system using FastAPI and React."
-  }
-];
+import timelineJson from './timeline.json';
+const timelineData: TimelineItem[] =timelineJson as TimelineItem[];
 
 export default timelineData;
