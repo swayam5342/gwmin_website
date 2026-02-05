@@ -1,0 +1,6 @@
+
+Contact: mailto:security@johndoe.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Policy: https://johndoe.com/security-policy
+# Built with security in mind. If you find a vulnerability, please report it via email.

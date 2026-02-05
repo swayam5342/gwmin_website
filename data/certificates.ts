@@ -1,0 +1,28 @@
+
+import { Certificate } from '../types';
+
+const certificatesData: Certificate[] = [
+  {
+    "id": 1,
+    "name": "Google Cybersecurity Professional",
+    "issuer": "Google",
+    "year": "2024",
+    "file": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+  },
+  {
+    "id": 2,
+    "name": "CompTIA Security+ (SY0-701)",
+    "issuer": "CompTIA",
+    "year": "2024",
+    "file": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+  },
+  {
+    "id": 3,
+    "name": "Meta Back-End Developer Professional",
+    "issuer": "Meta",
+    "year": "2023",
+    "file": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+  }
+];
+
+export default certificatesData;
