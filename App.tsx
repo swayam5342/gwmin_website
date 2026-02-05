@@ -32,7 +32,6 @@ const App: React.FC = () => {
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/certificates/:id" element={<CertificateDetail />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Layout>
     </Router>

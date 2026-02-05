@@ -13,12 +13,5 @@
     "issuer": "CompTIA",
     "year": "2024",
     "file": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-  },
-  {
-    "id": 3,
-    "name": "Meta Back-End Developer Professional",
-    "issuer": "Meta",
-    "year": "2023",
-    "file": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
   }
 ]

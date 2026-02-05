@@ -11,7 +11,7 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 py-16 space-y-16">
       <header className="border-b border-brand-border pb-8">
-        <h1 className="text-4xl font-mono font-bold tracking-tighter">BIO_DATA // SYSTEM_USER</h1>
+        <h1 className="text-4xl font-mono font-bold tracking-tighter">About</h1>
         <p className="text-brand-muted mt-2 font-mono text-[10px] tracking-widest uppercase">ID_IDENTIFIER: JD_ENGINEER_V4</p>
       </header>
 

@@ -7,12 +7,11 @@ export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'SYSTEM_ROOT', path: '/' },
-    { name: 'BIO_DATA', path: '/about' },
-    { name: 'ENGINEERING', path: '/projects' },
-    { name: 'CERT_VAULT', path: '/certificates' },
-    { name: 'DOC_RESUME', path: '/resume' },
-    { name: 'CONTACT', path: '/contact' },
+    { name: 'HOME', path: '/' },
+    { name: 'ABOUT', path: '/about' },
+    { name: 'PROJECTS', path: '/projects' },
+    { name: 'CERTIFICATES', path: '/certificates' },
+    { name: 'RESUME', path: '/resume' },
   ];
 
   const activeClass = "text-brand-accent border-b border-brand-accent";
@@ -24,11 +23,9 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-14">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="bg-brand-accent p-1 text-brand-bg">
-              <Shield size={16} />
             </div>
             <span className="font-mono font-bold tracking-tight text-xs flex flex-col leading-none">
-              <span>SEC_KERNEL_v4.0</span>
-              <span className="text-[9px] text-brand-muted font-normal uppercase">Authorized Personnel</span>
+              <span>SWAYAM</span>
             </span>
           </Link>
 
